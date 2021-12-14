@@ -1,0 +1,25 @@
+{
+  "name": "web-dev-project-node2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Roger-ckg/web-dev-project-node2.git"
+  },
+  "keywords": [
+    "Web_Dev_final"
+  ],
+  "author": "LW",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Roger-ckg/web-dev-project-node2/issues"
+  },
+  "homepage": "https://github.com/Roger-ckg/web-dev-project-node2#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
