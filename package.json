@@ -20,6 +20,8 @@
   },
   "homepage": "https://github.com/Roger-ckg/web-dev-project-node2#readme",
   "dependencies": {
-    "express": "^4.17.1"
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "mongoose": "^6.1.1"
   }
 }
