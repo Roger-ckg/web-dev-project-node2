@@ -4,8 +4,8 @@ const findAllProfile = () => model.find();
 
 const findProfileById = (id) => model.findById(id);
 
-const updateProfile = (id, newProfile) =>
-    model.updateOne({_id:id},
+const updateProfile = (newProfile) =>
+    model.updateOne({username:newProfile.username},
         {$set: newProfile});
 
 module.exports = {

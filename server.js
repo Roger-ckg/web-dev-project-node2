@@ -7,7 +7,7 @@ app.use(express.json());
 // app.use(express.urlencoded());
 // app.use(cors());
 app.use(function(req, res, next) {
-    res.header("Access-Control-Allow-Origin", "*");
+    res.header("Access-Control-Allow-Origin", "http://localhost:3000");
     res.header("Access-Control-Allow-Headers",
         "Origin, X-Requested-With, Content-Type, Accept");
     res.header("Access-Control-Allow-Methods",
@@ -82,6 +82,8 @@ app.use(session({
 }));
 const MONGODB_URL = 'mongodb+srv://web-dev-project:web-dev-project@cluster0.zboy4.mongodb.net/myFirstDatabase?retryWrites=true&w=majority';
 mongoose.connect(MONGODB_URL);
+
+app.get('/hello123', (req, res) => res.send('hello 123'));
 
 require('./users/user-controller')(app);
 app.listen(process.env.PORT || 4001);

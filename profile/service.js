@@ -6,7 +6,7 @@ module.exports = (app) => {
         profileDao.findAllProfile().then(profile => res.json(profile));
 
     const updateProfile = (req, res) => {
-        profileDao.updateProfile(req.params.id, req.body)
+        profileDao.updateProfile(req.body)
             .then(status => res.send(status));
     }
 
@@ -15,6 +15,6 @@ module.exports = (app) => {
     }
 
     app.get("/api/profile", findAllProfile);
-    app.put("/api/profile/:id", updateProfile);
-    app.get("/api/profile/:id", findProfileById);
+    app.put("/api/profile", updateProfile);
+    app.get("/api/profile/:username", findProfileById);
 }

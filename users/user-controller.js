@@ -53,6 +53,7 @@ module.exports = (app) => {
     app.post('/api/login', login);
     app.post('/api/register', register);
     app.post('/api/profile', profile);
+    app.get('/api/profile', profile);
     app.post('/api/logout', logout);
     app.put('/api/users', updateUser);
     app.delete('/api/users/:userId', deleteUser);
